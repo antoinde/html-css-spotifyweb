@@ -9,6 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Link to Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <!-- link to CSS -->
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify-Web</title>
@@ -17,41 +22,101 @@
 
     <div class="web-app">
 
-        <div class="app-container">
-            <aside>
-                <div class="top">
-                    <img class="xs-mode loghi-aside" src="img/logo-small.svg" alt="Spotify logo">
-                    <img class="s-mode loghi-aside" src="img/logo.svg" alt="Spotify logo">
+        <div class="app-container flex grow">
+            <!-- aside -->
+            <aside class="flex column justify-between">
+                <!-- top -->
+                <div class="top flex column ">
                     <div>
+                        <img class="small-logo loghi-aside" src="img/logo-small.svg" alt="Spotify logo">
+                        <img id="logo-spotify" class="normal-logo loghi-aside" src="img/logo.svg" alt="Spotify logo">
+                    </div>
+                    <div class="flex">
                         <img class="loghi-aside" src="img/home.svg" alt="Home">
-                        <span> Home </span>
+                        <span class="grey-text"> Home </span>
                     </div>
-                    <div>
+                    <div class="flex">
                         <img class="loghi-aside" src="img/search.svg" alt="Search">
-                        <span> Cerca </span>
+                        <span class="grey-text"> Cerca </span>
                     </div>
-                    <div>
+                    <div class="flex">
                         <img class="loghi-aside" src="img/libreria.svg" alt="Library">
-                        <span> La tua libreria </span>
+                        <span class="grey-text"> La tua libreria </span>
                     </div>
-                    
+
+                    <h3>PLAYLIST</h3>
+                    <div class="playlist-area flex column row-gap-10px">
+                        <div class="flex col-gap-5px">
+                            <span class="square30x30px">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                            <span class="grey-text">
+                                Crea playlist
+                            </span>
+                        </div>
+                        <div>
+                            <span class="grey-text"> Nome playlist </span>
+                        </div>
+                        <div>
+                            <span class="grey-text"> Nome playlist </span>
+                        </div>
+                        <div>
+                            <span class="grey-text"> Nome playlist </span>
+                        </div>
+                        <div>
+                            <span class="grey-text"> Nome playlist </span>
+                        </div>
+                        <div>
+                            <span class="grey-text"> Nome playlist </span>
+                        </div>
+                        <div>
+                            <span class="grey-text"> Nome playlist </span>
+                        </div>
+                        <div>
+                            <span class="grey-text"> Nome playlist </span>
+                        </div>
+                        
+                    </div>                    
                 </div>
-                <div class="bottom">
-                    
-                    <img class="loghi-aside" src="img/profile.svg" alt="Profile logo">
+                <!-- bottom -->
+                <div class="bottom flex column ">
+
+                    <div>
+                        
+                        <span class="circular-border">
+                            <i id="special-i" class="fa-solid fa-arrow-down"></i>
+                        </span>
+                        <span class="grey-text"> Installa app </span>
+                    </div>
+                    <div class="grey-line">
+                    </div>
+                    <div class="flex">
+                        <img class="loghi-aside" src="img/profile.svg" alt="Profile logo">
+                        <span> <h3> Jonh Doe </h3> </span>
+                    </div>
                 </div>
                 
             </aside>
+            <!-- /aside -->
             <main>
                 <header>
                     <a href="#">Effettua l'upgrade</a>
                 </header>
                 <div class="album-container">
-                    <div class="super-square"></div>
+                    <div class="super-square">
+                        
+                    </div>
                 </div>
             </main>
         </div>
-        <footer>footer</footer>
+        <footer>
+            <i class="bi bi-folder"></i>
+            <i class="bi bi-heart"></i>
+            <i class="bi bi-shuffle"></i>
+            <i class="fa-solid fa-forward-step"></i>
+            <i class="fa-solid fa-play"></i>
+            <i class="fa-solid fa-rotate-right"></i>
+        </footer>
 
     </div>
 
