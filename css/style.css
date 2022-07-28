@@ -17,10 +17,15 @@ img{
     max-width: 100%;
 }
 .grey-text{ 
-    color: #6f6f6f;
+    color: #fff;
     font-size: 0.8rem;
     font-weight: 600;
+    filter: brightness(0.5);
 } 
+.grey-text:hover{
+    filter: brightness(1);
+    cursor: pointer;
+}
 h1, h2, h3, h4, h5, h6{
     color: #fff;
     padding: 0px 5px;
@@ -103,6 +108,10 @@ header a{
     padding: 5px 20px;
     text-decoration: none;
     margin-right: 20px;
+
+}
+header a:hover{
+    filter: brightness(40%);
 }
 aside{
     background-color: #000000;
