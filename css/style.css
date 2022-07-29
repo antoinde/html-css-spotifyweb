@@ -28,7 +28,6 @@ img{
 }
 h1, h2, h3, h4, h5, h6{
     color: #fff;
-    padding: 0px 5px;
 }
 i{
         color: #000000;
@@ -48,6 +47,10 @@ i{
     padding: 2px 3px;
     font-size: 0.5rem;
     margin-right: 10px;
+}
+footer i:hover{
+    filter: brightness(10%);
+    cursor: pointer;
 }
 /************************ /general ***************************/
 
@@ -84,7 +87,7 @@ main{
     position: relative;
 }
 main .album-container{
-    height: calc(100vh - 100px);
+    height: calc(100vh - 74px);
     overflow-y: auto;
 }
 .super-square{
@@ -112,6 +115,7 @@ header a{
 }
 header a:hover{
     filter: brightness(40%);
+    transform: scale(1.2);
 }
 aside{
     background-color: #000000;
@@ -153,9 +157,101 @@ aside img.s-mode{
 }
 footer{
     background-color: #333;
-    min-height: 100px;
+    min-height: 74px;
+    display: flex;
+    padding: 10px 15px;
+    justify-content: space-between;
+}
+footer i{
+    color: #fff;
+    font-size: 0.8rem;
 }
 
+footer .left, footer .center, footer .right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+footer .left .mini-img-container{
+    width: 50px;
+}
+footer .left .mini-title-container{
+    margin-right: 30px;
+}
+footer .left .icon-container i{
+    color:#6f6f6f;
+    margin: 0 5px;
+}
+footer .center{
+    row-gap: 6px;
+}
+footer .center .top {
+    justify-content: space-between;
+    column-gap: 20px;
+}
+.fa-circle-play{
+    font-size: 1.8rem;
+}
+.fa-circle-play:hover{
+    transform: scale(1.2);
+}
+.music-bar {
+    width: 30vw;
+    min-height: 4px;
+    background-color: #909090;
+    border-radius: 25px;
+    
+}
+.music-bar:hover .progres-bar{
+    background-color: rgb(22, 90, 22);
+}
+.music-bar:hover .circle-progres{
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    transform: scale(3);
+}
+.progres-bar{
+    width: 30%;
+    min-height: 4px;
+    background-color: #fff;
+    border-radius: 25px;
+    position: relative;
+}
+
+.bar-container{
+    padding: 5px 0;
+    margin: 0 10px;
+}
+.numbers{
+    font-size: 0.7rem;
+    color:#fff;
+}
+footer .right{
+    column-gap: 20px;
+}
+.volume-bar {
+    width: 100px;
+    min-height: 4px;
+    background-color: #909090;
+    border-radius: 25px;
+}
+.volume-bar:hover .progres-bar{
+    background-color: rgb(135, 135, 135);
+}
+.volume-bar:hover .circle-progres{
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    transform: scale(3);
+}
 /************************ /content ***************************/
 @media screen and (max-width: 960px) {
     /* medium MD */
@@ -183,7 +279,7 @@ footer{
     aside .normal-logo{
         display: none;
     }
-    aside h3, aside .playlist-area{
+    aside h4, aside h3, aside .playlist-area{
         display: none;
     }
 }
