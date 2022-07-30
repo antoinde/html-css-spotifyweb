@@ -41,12 +41,19 @@ i{
     background-color: #6f6f6f;
     border-radius: 4px;
 }
+.square30x30px:hover{
+    filter: opacity(0.4);
+}
 .circular-border{
     border: 1px solid #6f6f6f;
     border-radius: 50%;
-    padding: 2px 3px;
+    /* padding: 2px 2px; */
     font-size: 0.5rem;
-    margin-right: 10px;
+    padding-left: 5px;
+    padding-right: 3px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-right: 13px;
 }
 footer i:hover{
     filter: brightness(10%);
@@ -89,10 +96,53 @@ main{
 main .album-container{
     height: calc(100vh - 74px);
     overflow-y: auto;
+    background-color: #141922;
+
+
 }
 .super-square{
-    background-color: brown;
+    background-color: #141922;
     height: 300vh;
+    margin-top: 39px;
+}
+main li{
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+main ul{
+    column-gap: 15px;
+}
+.nav{
+    
+}
+.playlist_area{
+    padding: 10px;
+    /* background-color: red; */
+}
+.img_card_container{
+    position: relative;
+}
+.img_card_container:hover{
+    filter: opacity(0.4);
+}
+.hover_play_button{
+    min-height: 100%;
+    min-width: 100%;
+}
+.card_container{
+    text-align: center;
+    column-gap: 10px;
+}
+.card{
+    width: calc(100% / 6 - 9px);
+    padding: 5px 0px;
+}
+.card .fa-circle-play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 header{
     opacity: 80%;
@@ -176,8 +226,19 @@ footer .left, footer .center, footer .right{
 footer .left .mini-img-container{
     width: 50px;
 }
+footer .left .mini-img-container:hover{
+    filter: opacity(0.4);
+    cursor: pointer;
+
+}
 footer .left .mini-title-container{
     margin-right: 30px;
+}
+footer .left .mini-title-container:hover h4{
+    text-decoration: underline;
+    filter: opacity(0.9);
+    cursor: pointer;
+
 }
 footer .left .icon-container i{
     color:#6f6f6f;
@@ -194,7 +255,8 @@ footer .center .top {
     font-size: 1.8rem;
 }
 .fa-circle-play:hover{
-    transform: scale(1.2);
+    /* transform: scale(1.2);  */
+    /* not working */
 }
 .music-bar {
     width: 30vw;
@@ -258,10 +320,16 @@ footer .right{
 /************************ /content ***************************/
 @media screen and (max-width: 960px) {
     /* medium MD */
+    .card{
+        width: calc(100% / 4 - 9px);
+    }
 }
 
 @media screen and (max-width: 768px) {
     /* tablet S */
+    .card{
+        width: calc(100% / 2 - 9px);
+    }
     
 }
 
