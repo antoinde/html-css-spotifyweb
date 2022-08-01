@@ -126,9 +126,16 @@ main ul{
 .img_card_container{
     position: relative;
 }
-.img_card_container:hover{
+.img_card_container:hover img{
     filter: opacity(0.4);
     cursor: pointer;
+}
+.img_card_container:hover i{
+    display: block;
+}
+.img_card_container i{
+    display: none;
+    color: #fff;
 }
 .hover_play_button{ /* not solved */
     min-height: 100%;
