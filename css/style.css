@@ -115,9 +115,7 @@ main li:hover{
 main ul{
     column-gap: 15px;
 }
-.nav{
-    
-}
+
 .playlist_area{
     padding: 10px;
     /* background-color: red; */
@@ -209,6 +207,9 @@ aside div span{
 aside .bottom img{
     background-color: dimgrey;
     border-radius: 50%;
+}
+aside .bottom h4{
+    margin-left: 10px
 }
 aside h3{
     margin-top: 10px;
@@ -353,22 +354,21 @@ footer .right{
 
 @media screen and (max-width: 480px) {
     /* mobile XS */
-    aside .top span{
+    aside .top span,
+    aside .bottom .grey-text, 
+    aside .bottom .grey-line,
+    aside .normal-logo,
+    aside h4, 
+    aside h3, 
+    aside .playlist-area{
         display: none;
     }
-    aside .bottom .grey-text, aside .bottom .grey-line{
-        display: none;
-    }
+    
     aside div {
         padding-left: 0px;
     }
     aside .small-logo{
         display: inline-block;
     }
-    aside .normal-logo{
-        display: none;
-    }
-    aside h4, aside h3, aside .playlist-area{
-        display: none;
-    }
+    
 }
